@@ -21,27 +21,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1Y-9C-8Be">
-                                <rect key="frame" x="133" y="263" width="149" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" alpha="0.45000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1Y-9C-8Be">
+                                <rect key="frame" x="57" y="236" width="300" height="64"/>
+                                <color key="backgroundColor" red="0.017608484455958529" green="0.017608484455958529" blue="0.017608484455958529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="9AK-qK-i9p"/>
+                                    <constraint firstAttribute="height" constant="64" id="LpQ-oh-1kb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
                                 <state key="normal" title="Generate Dialog">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="0.31353148837531908" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="testButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aE5-9J-zP9"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cjo-h3-7LK">
-                                <rect key="frame" x="87" y="304" width="240" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.45000000000000001" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cjo-h3-7LK">
+                                <rect key="frame" x="87" y="343" width="240" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7tT-9h-SzH"/>
+                                    <constraint firstAttribute="width" constant="240" id="Nc8-pI-h7U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K1Y-9C-8Be" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="1O8-oh-hG7"/>
+                            <constraint firstItem="K1Y-9C-8Be" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="93k-lM-hT1"/>
+                            <constraint firstItem="Cjo-h3-7LK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BOv-yD-HHg"/>
+                            <constraint firstItem="Cjo-h3-7LK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gG6-Ky-pp8"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="generateDialogBtn" destination="K1Y-9C-8Be" id="iuH-72-Tne"/>
                         <outlet property="outPut" destination="Cjo-h3-7LK" id="mOW-aZ-BlC"/>
                     </connections>
                 </viewController>

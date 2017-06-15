@@ -13,11 +13,14 @@ class ViewController: UIViewController {
   
   @IBOutlet weak var outPut: UITextView!
   
+  @IBOutlet weak var generateDialogBtn: UIButton!
   weak var actionToEnable : UIAlertAction?
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+
+    self.generateDialogBtn.layer.cornerRadius = 20
+    self.generateDialogBtn.layer.masksToBounds = true
     
     let windowRect = UIScreen.main.bounds
     self.view.backgroundColor = UIColor.init(gradientStyle: UIGradientStyle.topToBottom, withFrame: windowRect, andColors: [UIColor.orange, UIColor.red])
